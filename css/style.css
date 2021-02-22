@@ -1,0 +1,108 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+}
+.container {
+    width: 100%;
+    height: 100vh;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(../img/pic-1.jpeg);
+    background-position: center;
+    background-size: cover;
+    padding-left: 8%;
+    padding-right: 8%;
+    box-sizing: border-box;
+}
+.navbar {
+    height: 12%;
+    display: flex;
+    align-items: center;
+}
+nav {
+    flex: 1;
+    text-align: right;
+}
+nav ul li {
+    list-style: none;
+    display: inline-block;
+    margin-left: 60px;
+}
+nav ul li a {
+    border-radius: 20px;
+    border: 1px solid #FF4B2B;
+    background-color: #FF4B2B;
+    color: #FFFFFF;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px 40px;
+    letter-spacing: 1px;
+    text-transform: lowercase;
+    transition: transform 80ms ease-in;
+    text-decoration: none;
+}
+.row {
+    display: flex;
+    height: 88%;
+    align-items: center;
+}
+.col {
+    flex-basis: 50%;
+}
+h1 {
+    color: #fff;
+    font-size: 100px;
+
+}
+p{
+    color: #fff;
+    font-size: 25px;
+    line-height: 20px;
+}
+.join {
+    border-radius: 20px;
+    border: 1px solid #FF4B2B;
+    background-color: #FF4B2B;
+    color: #FFFFFF;
+    font-size: 25px;
+    font-weight: bold;
+    padding: 10px 40px;
+    letter-spacing: 1px;
+    text-transform: lowercase;
+    transition: transform 80ms ease-in;
+    text-decoration: none;
+}
+  
+.card {
+    max-width: 290px;
+    min-height: 210px;
+    display: inline-block;
+    border-radius: 10px;
+    padding: 15px 25px;
+    box-sizing: border-box;
+    cursor: pointer;
+    margin: 10px 15px;
+    /* background-image: url(../img/pic-1.jpeg);*/
+    background-position: center;
+    background-size: cover;
+    transition: transform 0.5s;
+}
+.card1 {
+    background-image: url(../img/pic8.jpeg);
+}
+.card2 {
+    background-image: url(../img/pic14.jpeg);
+}
+.card3 {
+    background-image: url(../img/pic15.jpeg);
+}
+.card4 {
+    background-image: url(../img/pic18.jpeg);
+}
+.card:hover {
+    transform: translateY(-10px);
+}
+h5 {
+    color: #fff;
+    text-shadow: 0 0 5px #999;
+    font-size: 20px;
+}

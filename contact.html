@@ -5,160 +5,108 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <script src="https://kit.fontawesome.com/651d2edad9.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" type="text/css" href="css/contact.css">
-    <title>Contact App</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
+    <link rel="stylesheet" href="css/contact.css">
+    <title>Contacts</title> 
 </head>
 <body>
+     <div class="nav">
+        <img src="img/logo.png" class="logo" alt="">
+     </div>
     
-    <div class="container">
-        <header class="header"> 
-            <form class="search-bar">
-                <input type="search-name" class="contact-search" name="search-area" placeholder="Search">
-            </form>
+     <a href="index.html">
+    <button class="btn1">Log Out</button>
+     </a>
+    <br>
+    <br>
+    <br>
+     <div class="main-container">
+        <!-- input record --> 
+        <div class="record-input">
+             <h2>Create Contact</h2>
+             <div class="entry-form">
+                 <form>
+                      <label for="name">Name</label>
+                      <input type="text" id="name">
 
-            <a href="edit.html">
-                <i class="fas fa-plus-circle"></i>
-            
-            </a>    
-        </header>
+                      <label for="address">Adress</label>
+                      <input type="text" id="address">
 
-        <section class="contacts-library">
-            <ul class="contacts-list">
+                      <label for="contact-num">Contact-Number</label>
+                      <input type="text" id="contact-num">
+                 </form> 
 
-                <a href="contact-profile.html">
-                   <div class="contact-section">
-                       <li class="list_itme">
-                          <p class="contact-name">Aida Amza</p>
-                          <p class="relationship"> Friend</p>
-                       </li>
+                 <!-- alert message -->
+                 <span class="message"></span>
 
-                       <li class="list_item">
-                          <i class="fas fa-phone"></i>
-                          <i class="fas fa-sms text"></i>
-                       </li>
-                   </div>
-                </a>
+                <div class="input-btns">
+                     <button type="submit" id="submit-btn">
+                          <span>
+                               <i class="fas fa-plus"></i>
+                          </span> Add Contact
+                     </button>
 
-                <hr>
-
-                <a href="contact-profile.html">
-                   <div class="contact-section">
-                       <li class="list_itme">
-                          <p class="contact-name">Adolphe Ngenda</p>
-                          <p class="relationship"> Friend</p>
-                        </li>
-
-                        <li class="list_item">
-                           <i class="fas fa-phone"></i>
-                           <i class="fas fa-sms text"></i>
-                        </li>
-                    </div>
-                </a> 
-
-                <hr>
-
-                <a href="contact-profile.html">
-                   <div class="contact-section">
-                       <li class="list_itme">
-                          <p class="contact-name">Selemani Mulenda</p>
-                          <p class="relationship"> Family</p>
-                       </li>
-
-                       <li class="list_item">
-                           <i class="fas fa-phone"></i>
-                           <i class="fas fa-sms text"></i>
-                       </li>
-                    </div>
-                </a>
-
-                <hr>
-
-                <a href="contact-profile.html">
-                   <div class="contact-section">
-                        <li class="list_itme">
-                           <p class="contact-name">Desire Kambale</p>
-                           <p class="relationship"> Friend</p>
-                        </li>
-
-                        <li class="list_item">
-                            <i class="fas fa-phone"></i>
-                            <i class="fas fa-sms text"></i>
-                        </li>
-                    </div>
-                </a>
-
-                <hr>
-
-                <a href="contact-profile.html">
-                   <div class="contact-section">
-                       <li class="list_itme">
-                           <p class="contact-name">Cryce Truly</p>
-                           <p class="relationship"> Work</p>
-                       </li>
-
-                       <li class="list_item">
-                           <i class="fas fa-phone"></i>
-                           <i class="fas fa-sms text"></i>
-                       </li>
-                    </div>
-                </a>
-
-                <hr>
-
-                <a href="contact-profile.html">
-                   <div class="contact-section">
-                       <li class="list_itme">
-                           <p class="contact-name">Mika</p>
-                           <p class="relationship"> Friend</p>
-                       </li>
-
-                       <li class="list_item">
-                           <i class="fas fa-phone"></i>
-                           <i class="fas fa-sms text"></i>
-                    </li>
+                     <button type="button" id="cancel-btn">
+                           <span>
+                                <i class="fas fa-times"></i>
+                           </span> Cancel
+                     </button>
                 </div>
-                </a>
+             </div>
+        </div>
 
-                <hr>
+        <!-- display record -->
+        <div class="record-display">
+            <h2>Available Contacts:</h2>
+            <!-- edit btn -->
+            <a href="edit.html"> 
+            <button type="button" id="edit-btn">
+                 <span>
+                      <i class="fas fa-edit"></i>
+                </span> Edit
+            </button>
+          </a> 
 
-                <a href="contact-profile.html">
-                   <div class="contact-section">
-                       <li class="list_itme">
-                           <p class="contact-name">Tresor</p>
-                           <p class="relationship"> Student</p>
-                       </li>
+            <div class="record-container">
+                 <!-- single record -->
+                 <!-- 
+                 <div class="record-item">
+                      <div class="record-el">
+                           <span id="labelling">Contact ID:</span>
+                           <span id="contact-id-content">1</span>
+                      </div>
 
-                       <li class="list_item">
-                           <i class="fas fa-phone"></i>
-                            <i class="fas fa-sms text"></i>
-                       </li>
-                   </div>
-                </a>
-
-                <hr>
-
-                <a href="contact-profile.html">
-                   <div class="contact-section">
-                        <li class="list_itme">
-                            <p class="contact-name">Prince Ishimwe</p>
-                            <p class="relationship"> Professor</p>
-                        </li>
-
-                        <li class="list_item">
-                            <i class="fas fa-phone"></i>
-                            <i class="fas fa-sms text"></i>
-                        </li>
+                      <div class="record-el">
+                         <span id="labelling">Name:</span>
+                         <span id="name-content">Omar Babou</span>
                     </div>
-                </a>
 
-                <hr>
+                    <div class="record-el">
+                         <span id="labelling">Address:</span>
+                         <span id="address-content">kigali</span>
+                    </div>
 
-            </ul>
-        </section>
+                    <div class="record-el">
+                         <span id="labelling">Contact-Number:</span>
+                         <span id="contact-num-content">0789919478</span>
+                    </div>
 
-    </div>
+                    <button type="button" id="delete-btn">
+                         <span>
+                              <i class="fas fa-trash"></i>
+                         </span> Delete
+                    </button>
+                 </div>
+               -->
+                 <!-- end of single record -->
+            </div>
+        </div>
+     </div> 
+
+
+
+     <!-- JS file -->
+     <script src="js/script.js"></script>
 </body>
 </html>

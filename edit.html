@@ -4,71 +4,35 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <script src="https://kit.fontawesome.com/651d2edad9.js" crossorigin="anonymous"></script>
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Inter&display=swap" rel="stylesheet">
-    
-    <link rel="stylesheet" type="text/css" href="css/edit.css">
     <title>Edit Contact</title>
+    <link rel="stylesheet" href="css/edit.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> 
 </head>
 <body>
-    
-   <div class="container">
-    <header class="hero">
-        <a href="contact-profile.html">
-         <i class="fas fa-arrow-circle-left back-btn"></i>
-        </a>
-         
-        <div class="hero-info">
-            <h1 class="name">Create Contact</h1>
-            <p class="relationship">Friend</p>
+    <div class="center">
+        <div class="container">
+           <div class="text">Edit Contact</div>
+           <form action="edit.html">
+               <div class="data">
+                   <label>Name</label>
+                   <input type="text" required>
+               </div>
+               <div class="data">
+                <label>Address</label>
+                <input type="address" required>
+               </div>
+               <div class="data">
+                <label>Contact Number</label>
+                <input type="contact-num" required>
+               </div>
+               <br>
+               <br>
+               <div class="btn">
+                   <div class="inner"></div>
+                   <button type="submit"> Edit</button>
+               </div>
+           </form>
         </div>
-    </header>
-
-    <section class="contact-info">
-        
-        <div class="info-line">
-           <i class="fas fa-phone icon-gradient"></i>
-           <input type="text" class="type" name="fullname" placeholder="Full Name">
-        </div>
-
-        <div class="info-line">
-            <i class="fas fa-sms text icon-gradient"></i>
-            <input type="text" class="type" name="relationship" placeholder="Relationship">
-        </div>
-        
-        <div class="info-line">
-            <i class="fas fa-phone icon-gradient"></i>
-            <input type="text" class="type" name="phone" placeholder="Phone Number">
-        </div>
-
-        <div class="info-line">
-            <i class="fas fa-envelope icon-gradient"></i>
-            <input type="text" class="type" name="email" placeholder="Email">
-        </div>
-
-        <div class="info-line">
-            <i id="location" class="fas fa-map-marker-alt icon-gradient"></i>
-            <input type="text" class="type" name="address" placeholder="Address">
-        </div>
-    </section>
-
-    <section class="button-container">
-        <a href="#">
-            <div class="update-contact">
-                <i class="fas fa-check-circle icon-gradient"></i>
-                <button class="button">Save Contact</button>
-            </div>         
-        </a>
-    </section>
-
-    <section class="button-container">
-        <a href="delete.html">
-            <div class="update-contact">
-                <i class="fas fa-trash icon-gradient"></i>
-                <button class="button">Delete Contact</button>
-            </div>         
-        </a>
-    </section>
+    </div> 
 </body>
 </html>
